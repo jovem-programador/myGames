@@ -73,7 +73,10 @@ constructor(private activatedRoute: ActivatedRoute, private router: Router, priv
       });
 
       $(document).on('click', '#links > a', () => {
-        $('#links').slideDown('fast');
+        if (window.innerWidth < 512) {
+          $('#links').slideDown('fast');
+        }
+
       });
 
     });
