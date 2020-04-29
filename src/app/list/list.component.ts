@@ -90,4 +90,22 @@ export class ListComponent implements OnInit {
     return false; // Sai sem fazer nada
   }
 
+  // Apaga um documento
+  deleteGame(gameKey, gameTitle) {
+
+  // Mensagem par confirma se deseja apagar
+
+  if (!confirm(`Oooops!\nTem certeza que deseja apagar "${gameTitle}" da sua coleção?`)) {
+    return false;
+  }
+
+  this.db.collection('games').doc(gameKey).delete().then(res => {
+    alert(`"${gameTitle}" foi apagado da sua coleção\nClique em [ok] para continuar.`);
+  }).catch(err => {
+    console.error(`Falha ao apagar: ${err}`);
+  });
+
+    return false;
+  }
+
 }
