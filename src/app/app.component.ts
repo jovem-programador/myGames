@@ -66,7 +66,7 @@ constructor(private activatedRoute: ActivatedRoute, private router: Router, priv
 
       $(window).resize(() => {
         if (window.innerWidth > 511) {
-          $('#links').show(0);
+          $('#links').show(0); 
         } else {
           $('#links').hide(0);
         }
