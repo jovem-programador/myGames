@@ -2,7 +2,7 @@
   text-align: center;
   padding: .8rem;
   margin-top: .8rem;
-  background: rgba(0, 96, 0, .5);
+  background: rgba(0, 5, 16, 0.3);
 }
 
 .list img {
@@ -32,11 +32,12 @@
   border: none;
   cursor: pointer;
   padding: .3rem;
+  margin-left: 4px;
 }
 
 .list .tools a:hover, .orderbox a:hover, .mark {
-  background: rgb(0, 255, 0);
-  color: rgb(0, 64, 0);
+  background: rgba(0, 5, 16, 0.3);
+  color: #FF00FF;
 }
 
 .iflist {
@@ -51,7 +52,7 @@
   justify-content: center;
   align-items: center;
   font-size: small;
-  background: rgba(0, 96, 0, .5);
+  background: rgba(0, 5, 16, 0.3);
 }
 
 .orderbox div {
@@ -62,8 +63,8 @@
   font-family: inherit;
   font-size: inherit;
   padding: .2rem;
-  color: rgb(0, 255, 0);
-  background: rgb(0, 32, 0);
+  color: #FF00FF;
+  background: black;
   border: none;
 }
 

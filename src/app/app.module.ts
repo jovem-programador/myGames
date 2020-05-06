@@ -12,9 +12,10 @@ import { E404Component } from './e404/e404.component';
 import { AboutComponent } from './about/about.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ListComponent, NewComponent, E404Component, AboutComponent, FormComponent],
+  declarations: [AppComponent, HomeComponent, ListComponent, NewComponent, E404Component, AboutComponent, FormComponent, EditComponent],
   imports: [
     BrowserModule,
 
@@ -23,7 +24,7 @@ import { FormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebase),
 
     AngularFirestoreModule,
-    
+
     FormsModule
   ],
   providers: [],
